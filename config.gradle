@@ -1,0 +1,39 @@
+ext {
+    //app相关版本
+    versions = [
+            compileSdkVersion: 30,
+            minSdkVersion    : 21,
+            targetSdkVersion : 30,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    //依赖库 相关版本
+    // 依赖相关版本控制
+    depVersion = [
+            appCompatVersion : "1.2.0",
+            recyclerViewVersion : "1.0.0",
+            lifecycleLivedataKtxVersion : "2.2.0",
+            lifecycleExtensions : "2.1.0",
+            constraintlayout:   "2.0.1"
+    ]
+
+
+    // 依赖
+    deps = [
+            //系统的androidx兼容包
+            androidx : [
+                    appcompat: "androidx.appcompat:appcompat:${depVersion.appCompatVersion}",
+                    recyclerview: "androidx.recyclerview:recyclerview:${depVersion.recyclerViewVersion}",
+                    lifecycleLivedataKtx: "androidx.lifecycle:lifecycle-livedata-ktx:${depVersion.lifecycleLivedataKtxVersion}",
+                    lifecycleExtensions: "androidx.lifecycle:lifecycle-extensions:${depVersion.lifecycleExtensions}",
+                    constraintlayout: "androidx.constraintlayout:constraintlayout:${depVersion.constraintlayout}"
+
+            ],
+
+            github:[
+
+            ]
+    ]
+
+}
